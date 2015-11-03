@@ -3,22 +3,23 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Branding from '../components/Branding/Branding';
 import Navigation from '../components/Navigation/Navigation';
+import CurrentPage from '../components/CurrentPage/CurrentPage';
 import * as WebsiteActions from '../actions/WebsiteActions';
 
 class Breakisolation extends Component {
   render() {
-    const { actions } = this.props;
-
-    return (<div className="page">
+    const { actions, currentPage } = this.props;
+    return (<div className="break-isolation">
         <Branding actions={actions} />
         <Navigation actions={actions} />
-      </div>);
+        <CurrentPage actions={actions} currentPage={currentPage} />
+    </div>);
   }
 }
 
 function mapState(state) {
   return {
-    board: state.board,
+    currentPage: state.get('currentPage'),
   };
 }
 
@@ -30,6 +31,7 @@ function mapDispatch(dispatch) {
 
 Breakisolation.propTypes = {
   actions: PropTypes.object,
+  currentPage: PropTypes.string,
 };
 
 export default connect(mapState, mapDispatch)(Breakisolation);
