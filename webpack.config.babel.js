@@ -2,7 +2,10 @@ import webpack from 'webpack';
 import path from 'path';
 
 const DEPLOY = process.env.DEPLOY;
-let plugins = [new webpack.HotModuleReplacementPlugin()];
+let plugins = [new webpack.HotModuleReplacementPlugin(), new webpack.ProvidePlugin({
+  $: "jquery",
+  jQuery: "jquery",
+})];
 
 if(DEPLOY) {
   plugins = [
@@ -10,7 +13,11 @@ if(DEPLOY) {
     new webpack.optimize.UglifyJsPlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.AggressiveMergingPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+    }),
   ];
 }
 
@@ -38,7 +45,7 @@ const config = {
       exclude: /node_modules/,
       loader: DEPLOY ? 'babel-loader' : 'react-hot!babel-loader'
     }, {
-        test: /\.scss$/,
+        test: /\.(css|scss$)/,
         loaders: ['style','css', 'sass']
     }, {
       test: /\.(png|jpg|woff|woff2|gif|ttf|eot|svg)$/,
