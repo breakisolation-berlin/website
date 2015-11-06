@@ -7,11 +7,16 @@ import CurrentPage from '../components/CurrentPage/CurrentPage';
 import * as WebsiteActions from '../actions/WebsiteActions';
 
 class Breakisolation extends Component {
+
+  componentDidMount() {
+    this.props.actions.loadData();
+  }
+
   render() {
-    const { actions, currentPage } = this.props;
-    return (<div className="break-isolation">
+    const { actions, currentPage, data } = this.props;
+    return (<div className="break-isolation pure-u-1-1">
         <Branding actions={actions} />
-        <Navigation actions={actions} />
+        <Navigation actions={actions} data={data} />
         <CurrentPage actions={actions} currentPage={currentPage} />
     </div>);
   }
@@ -20,6 +25,7 @@ class Breakisolation extends Component {
 function mapState(state) {
   return {
     currentPage: state.get('currentPage'),
+    data: state.get('data'),
   };
 }
 
@@ -32,6 +38,7 @@ function mapDispatch(dispatch) {
 Breakisolation.propTypes = {
   actions: PropTypes.object,
   currentPage: PropTypes.string,
+  data: PropTypes.object,
 };
 
 export default connect(mapState, mapDispatch)(Breakisolation);

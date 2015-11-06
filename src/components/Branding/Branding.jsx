@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import './Branding.scss';
 
 export default class Branding extends Component {
   render() {
     return (
-        <h1>todos</h1>
+        <div className="logo"></div>
     );
   }
 }
