@@ -16,7 +16,7 @@ class Breakisolation extends Component {
     const { actions, currentPage, data } = this.props;
     return (<div className="break-isolation pure-u-1-1">
         <Branding actions={actions} />
-        <Navigation actions={actions} data={data} />
+        <Navigation actions={actions} data={data} currentPage={currentPage} />
         <CurrentPage actions={actions} currentPage={currentPage} />
     </div>);
   }

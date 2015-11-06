@@ -1,4 +1,6 @@
 import React, { Component, PropTypes } from 'react';
+import classNames from 'classnames';
+import { PAGES } from '../../constants/ActionTypes';
 import './Navigation.scss';
 
 class Navigation extends Component {
@@ -6,8 +8,12 @@ class Navigation extends Component {
   componentDidMount() {
   }
 
+  _navigateTo(page) {
+    this.props.actions.navigateTo(page);
+  }
+
   render() {
-    const { data } = this.props;
+    const { data, currentPage } = this.props;
 
     if (!data.news) {
       return (<div></div>);
@@ -25,12 +31,11 @@ class Navigation extends Component {
           </div>
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav">
-              <li className="active"><a href="#">Link <span className="sr-only">(current)</span></a></li>
-              <li><a href="#">{data.news.label}</a></li>
-              <li><a href="#">{data.about_us.label}</a></li>
-              <li><a href="#">{data.sessions.label}</a></li>
-              <li><a href="#">{data.join_in.label}</a></li>
-              <li><a href="#">{data.contact.label}</a></li>
+              <li className={classNames({'active': currentPage === PAGES.BLOG})}><a href="#" onClick={this._navigateTo.bind(this, PAGES.BLOG)}>{data.news.label}</a></li>
+              <li className={classNames({'active': currentPage === PAGES.ABOUT_US})}><a href="#" onClick={this._navigateTo.bind(this, PAGES.ABOUT_US)}>{data.about_us.label}</a></li>
+              <li className={classNames({'active': currentPage === PAGES.SESSIONS})}><a href="#" onClick={this._navigateTo.bind(this, PAGES.SESSIONS)}>{data.sessions.label}</a></li>
+              <li className={classNames({'active': currentPage === PAGES.JOIN_IN})}><a href="#" onClick={this._navigateTo.bind(this, PAGES.JOIN_IN)}>{data.join_in.label}</a></li>
+              <li className={classNames({'active': currentPage === PAGES.CONTACT})}><a href="#" onClick={this._navigateTo.bind(this, PAGES.CONTACT)}>{data.contact.label}</a></li>
             </ul>
               <ul className="nav navbar-nav navbar-right">
                 <li className="dropdown">
@@ -53,6 +58,8 @@ class Navigation extends Component {
 
 Navigation.propTypes = {
   data: PropTypes.object,
+  currentPage: PropTypes.string,
+  actions: PropTypes.object,
 };
 
 export default Navigation;
