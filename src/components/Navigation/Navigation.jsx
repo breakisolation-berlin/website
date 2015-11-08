@@ -6,6 +6,13 @@ import './Navigation.scss';
 class Navigation extends Component {
 
   componentDidMount() {
+    const page = window.location.hash;
+    switch (page) {
+    case '#about_us':
+      return this._navigateTo(PAGES.ABOUT_US);
+    default:
+      return this._navigateTo(PAGES.BLOG);
+    }
   }
 
   _navigateTo(page) {
@@ -31,11 +38,11 @@ class Navigation extends Component {
           </div>
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav">
-              <li className={classNames({'active': currentPage === PAGES.BLOG})}><a href="#" onClick={this._navigateTo.bind(this, PAGES.BLOG)}>{data.news.label}</a></li>
-              <li className={classNames({'active': currentPage === PAGES.ABOUT_US})}><a href="#" onClick={this._navigateTo.bind(this, PAGES.ABOUT_US)}>{data.about_us.label}</a></li>
-              <li className={classNames({'active': currentPage === PAGES.SESSIONS})}><a href="#" onClick={this._navigateTo.bind(this, PAGES.SESSIONS)}>{data.sessions.label}</a></li>
-              <li className={classNames({'active': currentPage === PAGES.JOIN_IN})}><a href="#" onClick={this._navigateTo.bind(this, PAGES.JOIN_IN)}>{data.join_in.label}</a></li>
-              <li className={classNames({'active': currentPage === PAGES.CONTACT})}><a href="#" onClick={this._navigateTo.bind(this, PAGES.CONTACT)}>{data.contact.label}</a></li>
+              <li className={classNames({'active': currentPage === PAGES.BLOG})}><a href="#blog" onClick={this._navigateTo.bind(this, PAGES.BLOG)}>{data.news.label}</a></li>
+              <li className={classNames({'active': currentPage === PAGES.ABOUT_US})}><a href="#about_us" onClick={this._navigateTo.bind(this, PAGES.ABOUT_US)}>{data.about_us.label}</a></li>
+              <li className={classNames({'active': currentPage === PAGES.SESSIONS})}><a href="#sessions" onClick={this._navigateTo.bind(this, PAGES.SESSIONS)}>{data.sessions.label}</a></li>
+              <li className={classNames({'active': currentPage === PAGES.JOIN_IN})}><a href="#join_in" onClick={this._navigateTo.bind(this, PAGES.JOIN_IN)}>{data.join_in.label}</a></li>
+              <li className={classNames({'active': currentPage === PAGES.CONTACT})}><a href="#contact" onClick={this._navigateTo.bind(this, PAGES.CONTACT)}>{data.contact.label}</a></li>
             </ul>
               <ul className="nav navbar-nav navbar-right">
                 <li className="dropdown">
