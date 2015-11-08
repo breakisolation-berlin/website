@@ -10,6 +10,8 @@ class Navigation extends Component {
     switch (page) {
     case '#about_us':
       return this._navigateTo(PAGES.ABOUT_US);
+    case '#sessions':
+      return this._navigateTo(PAGES.SESSIONS);
     default:
       return this._navigateTo(PAGES.BLOG);
     }
