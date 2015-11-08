@@ -25,8 +25,13 @@ class Navigation extends Component {
     this.props.actions.navigateTo(page);
   }
 
+  _switchTo(lang) {
+    this.props.actions.loadData(lang);
+  }
+
   render() {
     const { data, currentPage } = this.props;
+    const self = this;
 
     if (!data.news) {
       return (<div></div>);
@@ -56,7 +61,7 @@ class Navigation extends Component {
                   <ul className="dropdown-menu">
                     {
                       data.languages.map((language, index) => {
-                        return (<li key={index}><a href="#">{language.label}</a></li>);
+                        return (<li key={index}><a href="#" onClick={self._switchTo.bind(self, language.code)}>{language.label}</a></li>);
                       })
                     }
                   </ul>

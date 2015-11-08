@@ -9,7 +9,7 @@ import * as WebsiteActions from '../actions/WebsiteActions';
 class Breakisolation extends Component {
 
   componentDidMount() {
-    this.props.actions.loadData();
+    this.props.actions.loadData('de');
   }
 
   render() {
