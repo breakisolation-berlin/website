@@ -17,7 +17,7 @@ class Breakisolation extends Component {
     return (<div className="break-isolation pure-u-1-1">
         <Branding actions={actions} />
         <Navigation actions={actions} data={data} currentPage={currentPage} />
-        <CurrentPage actions={actions} currentPage={currentPage} />
+        <CurrentPage actions={actions} data={data} currentPage={currentPage} />
     </div>);
   }
 }

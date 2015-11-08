@@ -9,13 +9,14 @@ class CurrentPage extends Component {
     if (currentPage === PAGES.BLOG) {
       return (<Blog />);
     } else if (currentPage === PAGES.ABOUT_US) {
-      return (<AboutUs />);
+      return (<AboutUs content={this.props.data.about_us.content} />);
     }
   }
 }
 
 CurrentPage.propTypes = {
   currentPage: PropTypes.string,
+  data: PropTypes.object,
 };
 
 export default CurrentPage;

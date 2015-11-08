@@ -3,7 +3,18 @@ import { NAVIGATE, PAGES, LOAD_DATA } from '../constants/ActionTypes';
 import navigateTo from './navigateTo';
 import loadData from './loadData';
 
-export const INITIAL_STATE = new Map({currentPage: PAGES.BLOG, language: 'en', data: {}});
+export const INITIAL_STATE = new Map(
+  {
+    currentPage: PAGES.BLOG,
+    language: 'en',
+    data: {
+      about_us: {
+        label: '',
+        content: [],
+      },
+    },
+  }
+);
 
 export default function reducer(state = INITIAL_STATE, action = {}) {
   switch (action.type) {

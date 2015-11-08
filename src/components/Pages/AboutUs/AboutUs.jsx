@@ -1,9 +1,29 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
+import './AboutUs.scss';
 
-export default class Blog extends Component {
+class AboutUs extends Component {
   render() {
+    const { content } = this.props;
     return (
-        <h1>todos</h1>
+        <div className="about-us row">
+          <div className="col-md-12">
+            {
+              content.map((text, index) => {
+                if (text.type === 'bold') {
+                  return (<h1 key={index}>{text.content}</h1>);
+                } else if (text.type === 'regular') {
+                  return (<p key={index}>{text.content}</p>);
+                }
+              })
+            }
+          </div>
+        </div>
     );
   }
 }
+
+AboutUs.propTypes = {
+  content: PropTypes.array,
+};
+
+export default AboutUs;
