@@ -32,4 +32,5 @@ node_modules/
 .tmp
 build/*
 !build/index.html
+!build/translations
 npm-debug.log

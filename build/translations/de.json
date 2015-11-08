@@ -1,0 +1,27 @@
+{
+  "language": "Deutsch",
+  "languages": [
+    {
+      "label": "English",
+      "code": "en"
+    }
+  ],
+  "news": {
+    "label": "NEWS"
+  },
+  "about_us": {
+    "label": "ÜBER UNS",
+    "content": [{"type": "bold", "content": "Heading"},
+                {"type": "regular", "content": "content1"},
+                {"type": "regular", "content": "content2"}]
+  },
+  "sessions": {
+    "label": "TERMINE"
+  },
+  "join_in": {
+    "label": "MITMACHEN"
+  },
+  "contact": {
+    "label": "KONTAKT"
+  }
+}
