@@ -12,6 +12,10 @@ class Navigation extends Component {
       return this._navigateTo(PAGES.ABOUT_US);
     case '#sessions':
       return this._navigateTo(PAGES.SESSIONS);
+    case '#join_in':
+      return this._navigateTo(PAGES.JOIN_IN);
+    case '#contact':
+      return this._navigateTo(PAGES.CONTACT);
     default:
       return this._navigateTo(PAGES.BLOG);
     }
