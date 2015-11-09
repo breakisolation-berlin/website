@@ -49,7 +49,9 @@ const config = {
         loaders: ['style','css', 'sass']
     }, {
       test: /\.(png|jpg|woff|woff2|gif|ttf|eot|svg)$/,
-      loader: 'url-loader?prefix=website&limit=8192'
+      loader: 'url-loader',
+      query: { limit: "8192",
+              prefix: 'website/'}
     }]
   },
   plugins: plugins
