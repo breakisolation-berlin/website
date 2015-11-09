@@ -33,4 +33,5 @@ node_modules/
 build/*
 !build/index.html
 !build/translations
+!build/logo.jpg
 npm-debug.log
