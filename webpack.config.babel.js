@@ -49,7 +49,7 @@ const config = {
         loaders: ['style','css', 'sass']
     }, {
       test: /\.(png|jpg|woff|woff2|gif|ttf|eot|svg)$/,
-      loader: 'url-loader?limit=8192'
+      loader: 'url-loader?prefix=website&limit=8192'
     }]
   },
   plugins: plugins
