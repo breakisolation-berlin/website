@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import jQuery from 'jquery/dist/jquery.js';
+import Slider from './Slider/Slider';
 import 'slick-carousel/slick/slick.scss';
 import 'slick-carousel/slick/slick-theme.scss';
 import 'slick-carousel/slick/slick.js';
@@ -17,11 +18,7 @@ export default class Blog extends Component {
   render() {
     return (
         <div className="blog">
-          <div className="slides" ref="carousel">
-            <div className="slide"><h3>1</h3></div>
-            <div className="slide"><h3>2</h3></div>
-            <div className="slide"><h3>3</h3></div>
-          </div>
+          <Slider />
           <div className="row">
             <div className="col-md-8">
               <div className="panel panel-default">
