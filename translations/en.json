@@ -1,0 +1,96 @@
+{
+  "language": "English",
+  "languages": [
+    {
+      "label": "German",
+      "code": "de"
+    }
+  ],
+  "news": {
+    "label": "NEWS"
+  },
+  "about_us": {
+    "label": "ABOUT US",
+    "content": [{"type": "h1", "content": "ABOUT US"},
+                {"type": "h3", "content": "BREAK ISOLATION – German Language Sessions for Refugees in Berlin"},
+                {"type": "regular", "content": "The Break Isolation German lessons was founded in 2013 in the Gerhart-Hauptmann-Schule in Kreuzberg. When many refugees were forced to leave the school in the summer of 2014, we continued teaching in different places across the city where refugees stay."},
+                {"type": "regular", "content": "The lessons are free and students do not have to register, a (possibly non-existent) residence title is not necessary. Everybody is welcome and can join the sessions without making a prior appointment. Regular participation is very welcomed, but not necessary."},
+                {"type": "h3", "content": "HOW DO WE TEACH?"},
+                {"type": "regular", "content": "The principle of how we teach German is simple and different to conventional German courses."},
+                {"type": "regular", "content": "Our teachers generally have no formal teaching experience. Every person who speaks German can join in and it works like this:"},
+                {"type": "regular", "content": "We arrive at each session with as many teachers as possible. Depending on how many people have come to learn, we divide into the smallest groups possible, sitting down at different tables. The German-speakers work out what level those wanting to learn are at and then decide spontaneously what tasks to tackle that day."},
+                {"type": "regular", "content": "This type of teaching makes it possible, but not necessary, for on-going learning partnerships to develop. Yet regular participation is not a must for either student or teacher. We do not keep registration or attendance lists. Those wanting greater regularity are free to make such arrangements with their ‘own’ students, building a more fixed learning partnership. Others can simply attend according to how much time and capacity they have at any given time."},
+                {"type": "regular", "content": "Both students and teachers are always welcome to try things out – it’s fun! You are welcome to start ‘teaching’ or learning, or just join a table and see how it all works."},
+                {"type": "regular", "content": "We have groups in different parts of the city – please find the session schedule <a href='/#sessions'>here</a>"}]
+  },
+  "sessions": {
+    "label": "SESSIONS",
+    "direction_label": "Directions",
+    "locations": [
+      {
+        "day": "Monday",
+        "place": "Kreutzigerstr. 19 (Friedrichshain)",
+        "time": "18-20 o Clock",
+        "directions_link": "https://www.google.com/maps/dir/Current+Location/Kreutzigerstraße+19,+10247+Berlin,+Germany"
+      },
+      {
+        "day": "Tuesday",
+        "place": "Gürtelstr. 19 (Friedrichshain)",
+        "time": "18-20 o Clock",
+        "directions_link": "https://www.google.com/maps/dir/Current+Location/Gürtelstraße+19,+10247+Berlin,+Germany"
+      },
+      {
+        "day": "Tuesday",
+        "place": "Friedrichstr. 180 (Mitte) <br/> Hertie School of Governance <br/> Raum 2.3.2",
+        "time": "18-20 o Clock",
+        "directions_link": "https://www.google.com/maps/dir/Current+Location/Hertie+School+of+Governance/@52.5128387,13.3871367,17z"
+      },
+      {
+        "day": "Wednesday",
+        "place": "Askanierring 71 (Spandau)",
+        "time": "18-20 o Clock",
+        "directions_link": "https://www.google.com/maps/dir/Current+Location/Askanierring+71,+13585+Berlin,+Germany"
+      },
+      {
+        "day": "Thursday",
+        "place": "Kaiserdamm 3 (Charlottenburg)",
+        "time": "18-20 o Clock",
+        "directions_link": "https://www.google.com/maps/dir/Current+Location/Kaiserdamm+3,+14057+Berlin,+Germany"
+      }
+    ]
+  },
+  "join_in": {
+    "label": "JOIN IN",
+    "content": [
+      {
+        "type": "h1",
+        "content": "JOIN IN"
+      },
+      {
+        "type": "regular",
+        "content": "If you want to join us as either student or teacher, you can start anytime."
+      },
+      {
+        "type": "regular",
+        "content": "Find out more about the teaching sessions <a href='/#about_us'>here</a> and find the session schedule <a href='/#sessions'>here</a>"
+      }
+    ]
+  },
+  "contact": {
+    "label": "CONTACT",
+    "content": [
+      {
+        "type": "h1",
+        "content": "CONTACT"
+      },
+      {
+        "type": "regular",
+        "content": "Should you have questions, comments or ideas – please contact us! <br/> <a href='mailto:break_isolation@riseup.net' target='_top'>break_isolation@riseup.net</a>"
+      },
+      {
+        "type": "regular",
+        "content": "Or let’s meet on <a href='https://www.facebook.com/breakisolation'>Facebook</a>"
+      }
+    ]
+  }
+}
