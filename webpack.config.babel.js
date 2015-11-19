@@ -26,7 +26,7 @@ const config = {
     app: DEPLOY ? ['./index.js'] : ['webpack/hot/dev-server', './index.js']
   },
   output: {
-    publicPath: '/',
+    publicPath: '/website/',
     path: './build',
     filename: 'bundle.js'
   },
