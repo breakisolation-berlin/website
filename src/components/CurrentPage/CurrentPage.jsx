@@ -14,7 +14,7 @@ class CurrentPage extends Component {
     } else if (currentPage === PAGES.ABOUT_US) {
       return (<AboutUs content={this.props.data.about_us.content} />);
     } else if (currentPage === PAGES.SESSIONS) {
-      return (<Sessions content={this.props.data.about_us.content} />);
+      return (<Sessions sessions={this.props.data.sessions} />);
     } else if (currentPage === PAGES.JOIN_IN) {
       return (<JoinIn content={this.props.data.about_us.content} />);
     } else if (currentPage === PAGES.CONTACT) {

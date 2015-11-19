@@ -24,7 +24,40 @@
                 {"type": "regular", "content": "We have groups in different parts of the city – please find the session schedule <a href='/#sessions'>here</a>"}]
   },
   "sessions": {
-    "label": "SESSIONS"
+    "label": "SESSIONS",
+    "direction_label": "Directions",
+    "locations": [
+      {
+        "day": "Monday",
+        "place": "Kreutzigerstr. 19 (Friedrichshain)",
+        "time": "18-20 o Clock",
+        "directions_link": "https://www.google.com/maps/dir/Current+Location/Kreutzigerstraße+19,+10247+Berlin,+Germany"
+      },
+      {
+        "day": "Tuesday",
+        "place": "Gürtelstr. 19 (Friedrichshain)",
+        "time": "18-20 o Clock",
+        "directions_link": "https://www.google.com/maps/dir/Current+Location/Gürtelstraße+19,+10247+Berlin,+Germany"
+      },
+      {
+        "day": "Tuesday",
+        "place": "Friedrichstr. 180 (Mitte) <br/> Hertie School of Governance <br/> Raum 2.3.2",
+        "time": "18-20 o Clock",
+        "directions_link": "https://www.google.com/maps/dir/Current+Location/Hertie+School+of+Governance/@52.5128387,13.3871367,17z"
+      },
+      {
+        "day": "Wednesday",
+        "place": "Askanierring 71 (Spandau)",
+        "time": "18-20 o Clock",
+        "directions_link": "https://www.google.com/maps/dir/Current+Location/Askanierring+71,+13585+Berlin,+Germany"
+      },
+      {
+        "day": "Thursday",
+        "place": "Kaiserdamm 3 (Charlottenburg)",
+        "time": "18-20 o Clock",
+        "directions_link": "https://www.google.com/maps/dir/Current+Location/Kaiserdamm+3,+14057+Berlin,+Germany"
+      }
+    ]
   },
   "join_in": {
     "label": "JOIN IN"
