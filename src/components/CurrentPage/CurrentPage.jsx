@@ -1,10 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import {PAGES} from '../../constants/ActionTypes';
 import Blog from '../Pages/Blog/Blog';
-import AboutUs from '../Pages/AboutUs/AboutUs';
+import Page from '../Pages/Page/Page';
 import Sessions from '../Pages/Sessions/Sessions';
-import JoinIn from '../Pages/JoinIn/JoinIn';
-import ContactUs from '../Pages/ContactUs/ContactUs';
 
 class CurrentPage extends Component {
   render() {
@@ -12,13 +10,13 @@ class CurrentPage extends Component {
     if (currentPage === PAGES.BLOG) {
       return (<Blog />);
     } else if (currentPage === PAGES.ABOUT_US) {
-      return (<AboutUs content={this.props.data.about_us.content} />);
+      return (<Page content={this.props.data.about_us.content} />);
     } else if (currentPage === PAGES.SESSIONS) {
       return (<Sessions sessions={this.props.data.sessions} />);
     } else if (currentPage === PAGES.JOIN_IN) {
-      return (<JoinIn content={this.props.data.about_us.content} />);
+      return (<Page content={this.props.data.join_in.content} />);
     } else if (currentPage === PAGES.CONTACT) {
-      return (<ContactUs content={this.props.data.about_us.content} />);
+      return (<Page content={this.props.data.contact.content} />);
     }
   }
 }

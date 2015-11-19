@@ -4,9 +4,6 @@ import './Sessions.scss';
 class Sessions extends Component {
   render() {
     const { sessions } = this.props;
-    if (!sessions) {
-      return (<div className="sessions row"></div>);
-    }
     return (
         <div className="sessions row">
           {

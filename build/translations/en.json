@@ -60,9 +60,37 @@
     ]
   },
   "join_in": {
-    "label": "JOIN IN"
+    "label": "JOIN IN",
+    "content": [
+      {
+        "type": "h1",
+        "content": "JOIN IN"
+      },
+      {
+        "type": "regular",
+        "content": "If you want to join us as either student or teacher, you can start anytime."
+      },
+      {
+        "type": "regular",
+        "content": "Find out more about the teaching sessions <a href='/#about_us'>here</a> and find the session schedule <a href='/#sessions'>here</a>"
+      }
+    ]
   },
   "contact": {
-    "label": "CONTACT"
+    "label": "CONTACT",
+    "content": [
+      {
+        "type": "h1",
+        "content": "CONTACT"
+      },
+      {
+        "type": "regular",
+        "content": "Should you have questions, comments or ideas – please contact us! <br/> <a href='mailto:break_isolation@riseup.net' target='_top'>break_isolation@riseup.net</a>"
+      },
+      {
+        "type": "regular",
+        "content": "Or let’s meet on <a href='https://www.facebook.com/breakisolation'>Facebook</a>"
+      }
+    ]
   }
 }

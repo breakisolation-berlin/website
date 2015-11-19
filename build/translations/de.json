@@ -95,9 +95,37 @@
     ]
   },
   "join_in": {
-    "label": "MITMACHEN"
+    "label": "MITMACHEN",
+    "content": [
+      {
+        "type": "h1",
+        "content": "MITMACHEN"
+      },
+      {
+        "type": "regular",
+        "content": "Wenn du als Schüler*in oder Lehrer*in bei uns mitmachen willst, kannst du jederzeit einsteigen."
+      },
+      {
+        "type": "regular",
+        "content": "<a href='/#about_us'>Hier</a> kannst du mehr über den Unterricht erfahren und <a href='/#sessions'>hier</a> findest du unsere Unterrichtstermine."
+      }
+    ]
   },
   "contact": {
-    "label": "KONTAKT"
+    "label": "KONTAKT",
+    "content": [
+      {
+        "type": "h1",
+        "content": "KONTAKT"
+      },
+      {
+        "type": "regular",
+        "content": "Meldet euch bei uns, wenn ihr Fragen, Anmerkungen und Ideen habt! <br/> <a href='mailto:break_isolation@riseup.net' target='_top'>break_isolation@riseup.net</a>"
+      },
+      {
+        "type": "regular",
+        "content": "Oder wir sehen uns auf <a href='https://www.facebook.com/breakisolation'>Facebook </a>"
+      }
+    ]
   }
 }

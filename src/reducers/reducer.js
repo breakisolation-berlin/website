@@ -12,6 +12,18 @@ export const INITIAL_STATE = new Map(
         label: '',
         content: [],
       },
+      sessions: {
+        label: '',
+        locations: [],
+      },
+      join_in: {
+        label: '',
+        content: [],
+      },
+      contact: {
+        label: '',
+        content: [],
+      },
     },
   }
 );
