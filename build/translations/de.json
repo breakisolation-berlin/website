@@ -11,9 +11,52 @@
   },
   "about_us": {
     "label": "ÜBER UNS",
-    "content": [{"type": "bold", "content": "Heading"},
-                {"type": "regular", "content": "content1"},
-                {"type": "regular", "content": "content2"}]
+    "content": [
+      {
+        "type": "h1",
+        "content": "ÜBER UNS"
+      },
+      {
+        "type": "h3",
+        "content": "BREAK ISOLATION – Deutschunterricht für Geflüchtete in Berlin"
+      },
+      {
+        "type": "regular",
+        "content": "Der Break Isolation Deutschunterricht wurde 2013 in der Gerhart-Hauptmann-Schule in Kreuzberg ins Leben gerufen. Als im Sommer 2014 viele der Flüchtlinge gezwungen wurden, die Schule zu verlassen, haben wir den Unterricht über die Stadt verteilt an den Orten fortgesetzt, wo die Flüchtlinge nun lebten."
+      },
+      {
+        "type": "regular",
+        "content": "Der Unterricht ist umsonst, die Schüler*innen müssen sich nicht registrieren, ein (eventuell fehlender) Aufenthaltstitel spielt keine Rolle. Jeder ist willkommen und kann unangemeldet zu den Terminen kommen. Eine regelmäßige Teilnahme am Unterricht ist schön, aber nicht notwendig."
+      },
+      {
+        "type": "h3",
+        "content": "WIE UNTERRICHTEN WIR?"
+      },
+      {
+        "type": "regular",
+        "content": "Das Prinzip, nach dem wir Deutsch unterrichten, ist einfach und unterscheidet sich von klassischen Deutschkursen."
+      },
+      {
+        "type": "regular",
+        "content": "Unsere Lehrer*innen haben in der Regel keinen Lehrhintergrund. Jeder Mensch, der selbst Deutsch spricht, kann mitmachen und so funktioniert es:"
+      },
+      {
+        "type": "regular",
+        "content": "An jedem Unterrichtstermin erscheinen wir mit möglichst vielen Lehrer*innen. Je nachdem wie viele Menschen zum Lernen kommen, teilen wir uns in möglichst kleine Gruppen auf und setzen uns an verschiedene Tische. Die Lehrenden schauen auf welchem Stand die Lernenden sind und können spontan entscheiden, was sie an dem Tag behandeln wollen."
+      },
+      {
+        "type": "regular",
+        "content": "Bei dieser Art von Unterricht ist es möglich, aber nicht notwendig, dass feste Lernpartnerschaften entstehen. Somit ist eine regelmäßige Teilnahme weder bei den Lernenden noch bei den Lehrenden notwendig. Wir haben keine Teilnahmelisten oder Anmeldungen. Wer sich mehr Regelmäßigkeit wünscht, kann das im Rahmen einer festen Lernpartnerschaft mit den „eigenen“ Schüler*innen vereinbaren. Alle anderen kommen so, wie sie gerade Zeit und Möglichkeiten haben."
+      },
+      {
+        "type": "regular",
+        "content": "Ausprobieren ist sowohl für Schüler*innen und Lehrer*innen jederzeit möglich und macht Spaß. Ihr könnt gleich losunterrichten beziehungsweise loslernen oder euch erstmal an einen Tisch dazusetzen und schauen wie alles funktioniert."
+      },
+      {
+        "type": "regular",
+        "content": "Wir haben in verschiedenen Stadtteilen Gruppen, die Termine findet ihr <a href='/#sessions'>hier</a>"
+      }
+    ]
   },
   "sessions": {
     "label": "TERMINE"

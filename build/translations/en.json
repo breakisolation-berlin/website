@@ -2,7 +2,7 @@
   "language": "English",
   "languages": [
     {
-      "label": "Deutsch",
+      "label": "German",
       "code": "de"
     }
   ],
@@ -11,9 +11,17 @@
   },
   "about_us": {
     "label": "ABOUT US",
-    "content": [{"type": "bold", "content": "Heading"},
-                {"type": "regular", "content": "content1"},
-                {"type": "regular", "content": "content2"}]
+    "content": [{"type": "h1", "content": "ABOUT US"},
+                {"type": "h3", "content": "BREAK ISOLATION – German Language Sessions for Refugees in Berlin"},
+                {"type": "regular", "content": "The Break Isolation German lessons was founded in 2013 in the Gerhart-Hauptmann-Schule in Kreuzberg. When many refugees were forced to leave the school in the summer of 2014, we continued teaching in different places across the city where refugees stay."},
+                {"type": "regular", "content": "The lessons are free and students do not have to register, a (possibly non-existent) residence title is not necessary. Everybody is welcome and can join the sessions without making a prior appointment. Regular participation is very welcomed, but not necessary."},
+                {"type": "h3", "content": "HOW DO WE TEACH?"},
+                {"type": "regular", "content": "The principle of how we teach German is simple and different to conventional German courses."},
+                {"type": "regular", "content": "Our teachers generally have no formal teaching experience. Every person who speaks German can join in and it works like this:"},
+                {"type": "regular", "content": "We arrive at each session with as many teachers as possible. Depending on how many people have come to learn, we divide into the smallest groups possible, sitting down at different tables. The German-speakers work out what level those wanting to learn are at and then decide spontaneously what tasks to tackle that day."},
+                {"type": "regular", "content": "This type of teaching makes it possible, but not necessary, for on-going learning partnerships to develop. Yet regular participation is not a must for either student or teacher. We do not keep registration or attendance lists. Those wanting greater regularity are free to make such arrangements with their ‘own’ students, building a more fixed learning partnership. Others can simply attend according to how much time and capacity they have at any given time."},
+                {"type": "regular", "content": "Both students and teachers are always welcome to try things out – it’s fun! You are welcome to start ‘teaching’ or learning, or just join a table and see how it all works."},
+                {"type": "regular", "content": "We have groups in different parts of the city – please find the session schedule <a href='/#sessions'>here</a>"}]
   },
   "sessions": {
     "label": "SESSIONS"

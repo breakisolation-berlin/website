@@ -6,6 +6,13 @@ import './Navigation.scss';
 class Navigation extends Component {
 
   componentDidMount() {
+    window.onhashchange = () => {
+      this._autoNavigation();
+    };
+    this._autoNavigation();
+  }
+
+  _autoNavigation() {
     const page = window.location.hash;
     switch (page) {
     case '#about_us':
